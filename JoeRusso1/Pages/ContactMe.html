@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<html>
+<head>
+    <script src="https://use.fontawesome.com/ce1e13c921.js"></script>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-3.3.1.min.js"></script>
+    <title>ContactMe</title>
+    <style>
+        form, address {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color:grey">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:black;">
+        <div class="container-fluid">
+            <!--Navbar Header Start Here-->
+            <div class="navbar-header" style="padding-right:2px">
+                <a class="navbar-brand" style="color:dodgerblue" href="#">Joseph Russo</a>
+            </div>
+            <!--Navbar Header End Here-->
+            <!--Menu Start Here-->
+            <ul class="nav navbar-nav " style="display:inline-block; padding-left:0px; margin-left:2px; ">
+                <li style="float:left;"> <a class="btn btn-dark btn-outline-info" href="Home.html"> Home </a></li>
+                <li style="float:left;"><a class="btn btn-dark btn-outline-info" href="AboutMe.html"> About Me </></a></li>
+                <li style="float:left;"><a class="btn btn-dark btn-outline-info" href="ContactMe.html"> Contact </></a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li style="float:left;"><a class="btn btn-dark btn-outline-info" href="JoinMe.html"> Join Me </></a></li>
+            </ul>
+            <!--Menu End Here-->
+        </div>
+    </nav>
+
+    <div class="row" style="margin-left:5px; margin: auto; width: 38%; ">
+        <address style="background-color:aliceblue; padding-left:10px; padding-right:50px; border-style:solid;">
+            Address:
+            <span>109-32 111st</span><br />
+            <span>11420, SouthOzonePark</span><br />
+            <span> New york</span><br />
+            <br />
+            <span>email:</span><a href="mailto:jcrusso73@gmailcom">jcrusso73@gmail.com</a><br />
+            <span>web:</span><a href="www.revature.com">www.revature.com</a>
+        </address>
+    </div>
+
+    <div class="row" style="margin-left:15px ;  padding: 10px; margin: auto; width: 50%;  ">
+        <div class="input-group">
+            <form action="" style="background-color:aliceblue; padding-left:10px; padding-right:50px; border-style:groove; border-width:initial; border-color:black;">
+               
+                <fieldset >
+                    <legend>Send me a message. :}</legend>
+                    <span style="background-color: lightskyblue; color:dimgray; ">*All Fields are required*</span>
+                    <!--FirstName-->
+                    <div class="form-group row" style="margin-top:10px;">
+                        <label class="col-sm-4 col-form-label"  for="name">FirstName:</label>
+                        <input class="col-lg-8 form-control " type="text" id="Firstname" name="user_name" required autofocus placeholder="Enter your Firstname here">
+                        <span class="invalid-feedback" style="margin-left:20px; display:none;">FirstName is required </span>
+                    </div>
+                    <!--LastName-->
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="name">LastName:</label>
+                        <input class="col-lg-8 form-control " type="text" id="Lastname" name="user_name" required placeholder="Enter your Lastname here">
+                        <span class="invalid-feedback" style="margin-left:20px; display:none">LastName is required </span>
+                    </div>
+                    <!--Email-->
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="mail">E-mail:</label>
+                        <input class="col-sm-8 form-control" type="email" id="email" name="user_mail" required placeholder="youremail@example.com" autocomplete="on">
+                    </div>
+                    <!--Message-->
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="msg">Message:</label>
+                        <textarea class="col-lg-8 form-control" id="msg" name="user_message" required placeholder="Write your message here"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group row">
+                    <button class="btn btn-primary" type="submit" style="margin-left:20px;" id="Submit">Send your message</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="../Scripts/contact.js"></script>
+</body>
+</html>
